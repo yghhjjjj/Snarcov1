@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-/* Si quieres modificar esto y agregar mas APIs asegurate poner global.tuapiname = ['apikey'] */ /* By Skid 🤑 */
+/* si quieres modificar esto y agregarr mas apis asegurate poner global.tuapi = ['apikey']  skid 🤑 */
 
 global.openai_key = 'sk-0';
 /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
@@ -22,11 +22,10 @@ global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c7
 global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())];
 global.keysneoxrrr = ['5VC9rvNx', 'cfALv5'];
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())];
-global.lolkeysapi = ['GataDios']; // ['BrunoSobrino_2']
+global.lolkeysapi = ['BrunoSobrino_2']; // ['GataDios']
 global.itsrose = ['4b146102c4d500809da9d1ff'];
 
 global.APIs = {
-  ApiEmpire: 'https://api-brunosobrino.zipponodes.xyz',
   xteam: 'https://api.xteam.xyz',
   dzx: 'https://api.dhamzxploit.my.id',
   lol: 'https://api.lolhuman.xyz',
@@ -408,6 +407,6 @@ global.rpgshopp = { // Tienda
 const file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
   unwatchFile(file);
-  console.log(chalk.redBright('Update \'api.js\''));
+  console.log(chalk.redBright('Update \'config.js\''));
   import(`${file}?update=${Date.now()}`);
 });
